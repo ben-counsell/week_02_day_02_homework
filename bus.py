@@ -18,4 +18,4 @@ class Bus:
     def pick_up_from_stop(self, bus_stop):
         while len(bus_stop.queue) > 0:
             self.passengers.append(bus_stop.queue[0])
-            bus_stop.queue.remove(bus_stop.queue[0])
+            bus_stop.queue.pop(0)
